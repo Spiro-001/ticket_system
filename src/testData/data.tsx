@@ -1,0 +1,118 @@
+export const data = {
+  tickets: [
+    {
+      id: "TUID-00001",
+      name: "Application crashing on startup",
+      description:
+        "When I start the application it freezes than eventually closes out. The error code I get is 0xFE7012 'win.dll can not be located'. ",
+      tag: ["crashing", "start"],
+      status: "new",
+      priority: "normal",
+      createdAt: new Date("9/1/23 06:30:00"),
+      updatedAt: new Date("9/1/23 06:30:00"),
+    },
+    {
+      id: "TUID-00002",
+      name: "Network error 500",
+      description:
+        "Joining the network takes along time, about 5 minutes. After 5 minutes an error message says 'Unable to connect, error code 500'. ",
+      tag: ["500", "network"],
+      status: "new",
+      priority: "normal",
+      createdAt: new Date("9/1/23 08:30:00"),
+      updatedAt: new Date("9/1/23 08:30:00"),
+    },
+    {
+      id: "TUID-00003",
+      name: "Duplication error",
+      description:
+        "Everytime I make a new profile it creates two new profiles. When I refresh the page then it goes back to only one. I think it's a client side error.",
+      tag: ["duplication"],
+      status: "new",
+      priority: "important",
+      createdAt: new Date("9/2/23 07:00:00"),
+      updatedAt: new Date("9/2/23 07:00:00"),
+    },
+    {
+      id: "TUID-00004",
+      name: "Unable to connect to server",
+      description:
+        "I don't know why but everytime I try to join for the first time it never let's me join. After restarting the application I am then able to join the server.",
+      tag: ["connection", "server"],
+      status: "closed",
+      priority: "normal",
+      createdAt: new Date("9/5/23 12:30:00"),
+      updatedAt: new Date("9/5/23 12:30:00"),
+    },
+    {
+      id: "TUID-00005",
+      name: "Formatting out of place",
+      description:
+        "Everything looks out of place, it's like its all crammed together and it's hard to click on any of the buttons.",
+      tag: ["format"],
+      status: "new",
+      priority: "normal",
+      createdAt: new Date("9/6/23 13:15:00"),
+      updatedAt: new Date("9/6/23 13:15:00"),
+    },
+  ],
+  sprints: [
+    {
+      id: "SUID-00001",
+      name: "Priority Clients",
+      tickets: [
+        {
+          id: "TUID-00001",
+          name: "Application crashing on startup",
+          description:
+            "When I start the application it freezes than eventually closes out. The error code I get is 0xFE7012 'win.dll can not be located'. ",
+          tag: ["crashing", "start"],
+          status: "new",
+          priority: "normal",
+          createdAt: new Date("9/1/23 06:30:00"),
+          updatedAt: new Date("9/1/23 06:30:00"),
+        },
+      ],
+      startDate: new Date("9/5/23 06:30:00"),
+      endDate: new Date("9/5/23 08:30:00"),
+      createdAt: new Date("9/5/23 06:30:00"),
+      updatedAt: new Date("9/5/23 06:30:00"),
+    },
+    {
+      id: "SUID-00002",
+      name: "Daily 500",
+      tickets: [],
+      startDate: new Date("9/5/23 12:15:00"),
+      endDate: new Date("9/5/23 13:30:00"),
+      createdAt: new Date("9/5/23 06:30:00"),
+      updatedAt: new Date("9/5/23 06:30:00"),
+    },
+    {
+      id: "SUID-00003",
+      name: "Network Issues",
+      tickets: [],
+      startDate: new Date("9/6/23 14:30:00"),
+      endDate: new Date("9/7/23 14:45:00"),
+      createdAt: new Date("9/6/23 06:30:00"),
+      updatedAt: new Date("9/6/23 06:30:00"),
+    },
+    {
+      id: "SUID-00004",
+      name: "Server Issues",
+      tickets: [],
+      startDate: new Date("9/9/23 06:30:00"),
+      endDate: new Date("9/9/23 08:00:00"),
+      createdAt: new Date("9/7/23 06:30:00"),
+      updatedAt: new Date("9/7/23 06:30:00"),
+    },
+    {
+      id: "SUID-00005",
+      name: "Follow Ups",
+      tickets: [],
+      startDate: new Date("9/13/23 06:30:00"),
+      endDate: new Date("9/15/23 10:00:00"),
+      createdAt: new Date("9/12/23 06:30:00"),
+      updatedAt: new Date("9/12/23 06:30:00"),
+    },
+  ],
+};
